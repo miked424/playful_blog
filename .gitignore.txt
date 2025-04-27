@@ -1,25 +1,15 @@
-# Python
+# Ignore Python files
 __pycache__/
-*.py[cod]
-*.egg
-*.egg-info/
-dist/
-build/
-env/
-venv/
-myvenv/
+*.pyc
+*.pyo
 
-# Django
+# Ignore virtual environment
+venv/
+myenv/
+
+# Ignore other junk
 *.sqlite3
 db.sqlite3
-media/
+
+# Ignore staticfiles collection
 staticfiles/
-
-# VS Code
-.vscode/
-
-# Mac
-.DS_Store
-
-# Env variables
-.env

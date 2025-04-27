@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-rodi@yniard0*d#s@0bmuyu1$zm+rq+26!@4^#_1ckw-1qhc2c
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['playfulmovements.com', 'www.playfulmovements.com']
 
 
 # Application definition
@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'ckeditor',
+    'blog',
 ]
 
 MIDDLEWARE = [
@@ -120,3 +122,31 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+CKEDITOR_CONFIGS = {
+    'default': {
+        'toolbar': 'full',
+        'height': 300,
+        'width': '100%',
+    },
+}
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'media'
+
+CKEDITOR_UPLOAD_PATH = "uploads/"
+
+# Optional: Customize Admin UI
+ADMIN_SITE_HEADER = "Playful Blog Admin"
+ADMIN_SITE_TITLE = "Playful Blog Portal"
+ADMIN_INDEX_TITLE = "Welcome to the Blog Admin"
+
+# Email config for testing
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'mikedalemac@gmail.com'
+EMAIL_HOST_PASSWORD = 'nyuf dzkm acog eilt'  # Use app password if using Gmail 2FA
+
+STATIC_ROOT = BASE_DIR / 'staticfiles'
