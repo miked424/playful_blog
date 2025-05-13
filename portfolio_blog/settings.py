@@ -26,7 +26,8 @@ SECRET_KEY = 'django-insecure-rodi@yniard0*d#s@0bmuyu1$zm+rq+26!@4^#_1ckw-1qhc2c
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['playfulmovements.com', 'www.playfulmovements.com']
+ALLOWED_HOSTS = ['playfulmovements.com', 'www.playfulmovements.com', 'playful-django.onrender.com', 'localhost', '127.0.0.1']
+
 
 
 # Application definition
