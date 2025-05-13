@@ -1,1 +1,1 @@
-web: gunicorn playful_blog.wsgi
+web: gunicorn portfolio_blog.wsgi
